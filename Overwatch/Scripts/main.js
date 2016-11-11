@@ -9,14 +9,12 @@ $(document).ready(function () {
         // console.log("test");
          var requestUrl = baseURL + $("#platform").val() + "/" + $("#region").val() + "/" + $("#gamerTag").val() + "/profile";
         // alert(baseURL + $("#platform").val() + "/" + $("#region").val() + "/" + $("#gamerTag").val() + "/profile");
-        $.get(requestUrl,
-            function (data, status) {
-                console.log("test");
+        $.get(requestUrl, function (data, status) {
                 $.each(data, function(index, item){
                     $.each(item, function(key, value){
                         container.append("</br>"+ key + ": " + value + "</br>");
                     });
-                    container.append("</br></br>");
+                    //container.append("</br></br>");
                 });
             });
 

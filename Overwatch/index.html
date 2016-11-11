@@ -2,26 +2,32 @@
 <html>
 
 <head>
-	<title>Page Title</title>
+	<title>Overwatch Stat Checker</title>
 
 
 	<script src="Scripts/jquery-3.1.1.min.js"></script>
 	<script src="Scripts/main.js"></script>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="shortcut" href="favicon-96.png">
 
 </head>
 
 <body>
 
-	<div id="mainContainer">
+	<h1> Overwatch Stat Checker </h1>
 		<div id="form" class="content">
-			<p>Overwatch Test</p>
+			<header>
+			<h1 class="header">BattleNet Info</h1>
+			</header>
 
-			Gamer Tag:
+			<formDiv>
+			<div>
+			<strong>Gamer Tag:</strong>
 			<br>
-			<input id="gamerTag" type="text" name="gamerTag" value="AZTK4LIF3-1455">
+			<input id="gamerTag" type="text" name="gamerTag" value="Drazzilb-1424">
 			<br>
-			<br> Region (EU/US):
+			<br> 
+			<strong>Region (EU/US):</strong>
 			<br>
 			<select id="region">
             <option value="us">United States</option>
@@ -29,7 +35,8 @@
 
         </select>
 			<br>
-			<br> Platform (PC/Xbox/PS4):
+			<br> 
+			<strong>Platform (PC/Xbox/PS4):</strong>
 			<br>
 			<select id="platform">
             <option value="pc">PC</option>
@@ -38,15 +45,18 @@
         </select>
 			<br>
 			<br>
-			<input id="get" type="submit" value="Submit">
-
-
-
+			<submitButton>
+			<button input id="get" type="submit" onclick="getStats" value="Submit">Submit</button>
+			<script type="text/javascript">
+			function getStats(){
+			}
+			</script>
+			</submitbutton>
 		</div>
-
-		<div id="content" class="content">
-			<img id="avater" src="https://blzgdapipro-a.akamaihd.net/game/unlocks/0x0250000000000C39.png">
+			</formdiv>
+			
 		</div>
+		<!-- end of battle net info -->
 	</div>
 </body>
 
